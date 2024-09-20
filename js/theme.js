@@ -154,8 +154,12 @@ $(document).ready(function () {
     const button = document.querySelector('.container-toggle');
     if(dark_mode){
         $("body").addClass('dark');
+        sun.classList.add('visible')
+        moon.classList.remove('visible')
       }else{
         $("body").removeClass('dark');
+        sun.classList.remove('visible')
+        moon.classList.add('visible')
       }
     button.addEventListener('click', () => {
       sun.classList.toggle('visible')
