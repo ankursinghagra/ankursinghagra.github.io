@@ -690,6 +690,27 @@
 <!-- Error message modal -->
 
 
+<!-- Thank you modal -->
+<div class="modal fade" id="gamified-modal" tabindex="-1" role="dialog" aria-labelledby="gamified-modal">
+    <div class="modal-dialog modal-center" role="document">
+        <div class="modal-content" >
+            <div class="modal-body">
+                <div class="modal-title">
+                    <h1><span class="point">Gamified Resume?</span></h1>
+                </div>
+                <div class="modal-description">
+                    <p>Hi, I also building an gamified resume for myself. Care to check it out? </p>
+                    <p style="color: red;">Under Construction</p>
+                </div>
+                <a href="https://ankursinghagra.github.io/gamified_resume/" target="_blank" class="site-btn" >Go to Gamified Version</a>
+                <a href="#" class="site-btn" data-dismiss="modal">Back to cv</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Thank you modal -->
+
+
 <script src="js/jquery-2.2.3.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 
@@ -702,6 +723,14 @@
 <script src="js/wow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js" integrity="sha512-3j3VU6WC5rPQB4Ld1jnLV7Kd5xr+cq9avvhwqzbH/taCRNURoeEpoPBK9pDyeukwSxwRPJ8fDgvYXd6SkaZ2TA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/theme.js"></script>
+
+<script>
+    $(function(){
+        setTimeout(() => { 
+            $('#gamified-modal').modal('show');
+        }, 2000);
+    });
+</script>
 </body>
 
 </html>
